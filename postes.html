@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLANK | Postres</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="container">
+        <header class="text-center">
+            <a href="index.html">
+                <img src="pasteleria blank.png" class="logo">
+            </a>
+        </header>
+         <!-- menu -->
+         <nav>
+            <div id="navHamb">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                </svg>
+            </div>
+            <div id="navMenu">
+               <a href="inicio.html">INICIO</a>
+
+                <a href="tortas.html">TORTAS</a>
+
+                <a href="postes.html">POSTRES</a>
+                <a href="ofertas.html">OFERTAS</a>
+                <a href="contacto.html">CONTACTO</a>
+                <a href="ubicación.html">UBICACIÓN</a>
+                <a href="acercade.html">ACERCA DE</a>
+            </div>                
+        </nav>
+        <!--//menu -->
+        <!-- CONTENT-->
+        <div class="content">
+            <div class="text-center">
+                <img src="img/banner_postres.jpg" alt="">
+            </div>
+            <h1 class="title">POSTRES</h1>
+
+            <div class="productos">
+              
+              
+                <div class="text-center">
+                    <img src="postre1.jpg" alt="">
+                    <h2>Bs.50</h2>
+                  <h3> <span>DOCENA BROWNIES</h3>
+
+                <button class="button" onclick="agregarAlCarrito('Bs', 50)">Añadir al Carrito</button>
+                </div>
+                
+                
+                <div class="text-center">
+                    <img src="postre2.jpg" alt="">
+                    <h2>Bs.35</h2>
+
+                  <h3> <span>DOCENA CUPCAKE</span></h3>
+
+                <button class="button" onclick="agregarAlCarrito('Bs', 35)">Añadir al Carrito</button>
+                </div>
+                
+                
+                <div class="text-center">
+                    <img src="postre3.jpg" alt="">
+                    <h2>Bs.12</h2>
+
+                  <h3> <span>PORCION TRES LECHE</span></h3>
+
+                <button class="button" onclick="agregarAlCarrito('Bs', 12)">Añadir al Carrito</button>
+                </div>
+                
+                <div class="text-center">
+                    <img src="postre4.jpg" alt="">
+                    <h2>Bs.12</h2>
+
+                  <h3> <span>PORCION DE TORTA DE CHOCOLATE</span></h3>
+
+                <button class="button" onclick="agregarAlCarrito('Bs', 12)">Añadir al Carrito</button>
+                </div>
+            </div>
+          
+        </div>
+        <!-- //CONTENT-->
+        <footer class="text-center">
+            <p>BLANK Pastelería | 2024 | BOLIVIA</p>
+        </footer>
+    </div>
+     <div id="carrito" class="carrito-desplegable">
+
+        <div id="carritoIcono" onclick="toggleCarrito()">
+
+
+            <img src="carrito.png" alt="Carrito" class="carrito-img">
+            <span id="totalProductos">0</span> 
+            </div>
+        <div id="contenidoCarrito" class="contenido-carrito">
+            <h2>Carrito</h2>
+            <ul id="listaCarrito"></ul>
+            <p id="total">Total: Bs 0</p>
+            <button class="comprar-btn" onclick="irAPaginaQR()">Comprar</button>
+        </div>
+    <script src="app.js"></script>  
+</body>
+</html>
